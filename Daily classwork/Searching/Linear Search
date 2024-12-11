@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int num;
+    int i, key,element_found=0;
+    printf("Enter Array Size :");
+    scanf("%d",&num);
+    int arr[num];
+    printf("Enter Element in Array : ");
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter the Search key element :");
+    scanf("%d",&key);
+    /*linear search start*/
+    for (i=0;i<num;i++)
+    {
+        if(key==arr[i])
+        {
+            element_found=1;
+            break;
+        }
+    }
+    if(element_found==1)
+    {
+        printf("Element got at index %d",i+1);
+    }
+    else
+    {
+        printf("Element not found.");
+    }
+}
