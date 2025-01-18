@@ -7,8 +7,8 @@ int sum(int a, int b)
 void main()
 {
     int a,b,c;
-    printf("Enter two numbers :");
+    printf("Enter Two numbers :");
     scanf("%d %d",&a,&b);
     c=sum(a,b);
-    printf("Additiom of %d and %d is %d",a,b,c);
+    printf("Addition of %d and %d is %d",a,b,c);
 }
