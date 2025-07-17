@@ -1,0 +1,40 @@
+PS C:\Users\Kori\OneDrive\Desktop\surbhi_kori11> cd .\Surbhi-PPSlab-Sem1\.
+PS C:\Users\Kori\OneDrive\Desktop\surbhi_kori11\Surbhi-PPSlab-Sem1> git add .
+PS C:\Users\Kori\OneDrive\Desktop\surbhi_kori11\Surbhi-PPSlab-Sem1> git commit -m "first"
+[main ff536b2] first
+ 22 files changed, 2 insertions(+), 2 deletions(-)
+ rename Assignment 2/{program 1 - Check whether a given year is Leap year or not.c => program_1-Leap_year_or-Not.c} (100%)
+ create mode 100644 Assignment 2/program_1-Leap_year_or-Not.exe
+ rename Assignment 2/{program 2 - Types of Triangle identity.c => program_2-Types_of_Triangle.c} (100%)
+ create mode 100644 Assignment 2/program_2-Types_of_Triangle.exe
+ rename Assignment 2/{program 3 - Check whether a Triangle is Valid or Not.c => program_3-Triangle_is_Valid_or_Not.c} (100%)
+ create mode 100644 Assignment 2/program_3-Triangle_is_Valid_or_Not.exe
+ rename Assignment 2/{program 4 - Check whether a Character is Alphabet , digit or Special Character.c => program_4-identify_Character_is_Alphabet_digit_or_Special_Character.c} (100%)       
+ create mode 100644 Assignment 2/program_4-identify_Character_is_Alphabet_digit_or_Special_Character.exe
+ rename Assignment 2/{program 5 - Check whether an Alphabet is Vowel or a Consonant.c => program_5-Identify_an_Alphabet_is_Vowel_or_a_Consonant.c} (100%)
+ create mode 100644 Assignment 2/program_5-Identify_an_Alphabet_is_Vowel_or_a_Consonant.exe    
+ rename Assignment 2/{program 7 - Menu- driven to perform a Simple Calculation.c => program_7-Simple_Calculation.c} (100%)
+ create mode 100644 Assignment 2/program_7-Simple_Calculation.exe
+ create mode 100644 Daily classwork/Function/addition.exe
+(100%)
+ create mode 100644 Daily classwork/Function/combined_Addition_and_subtraction.exe
+ rename Daily classwork/Function/{print many times name => multiple_times_name.c} (100%)       
+ create mode 100644 Daily classwork/Function/multiple_times_name.exe
+ rename Daily classwork/Function/{table => table.c} (100%)
+ create mode 100644 Daily classwork/Function/table.exe
+ rename Daily classwork/Function/{Check Triangle => verify_Triangle.c} (100%)
+ create mode 100644 Daily classwork/Function/verify_Triangle.exe
+PS C:\Users\Kori\OneDrive\Desktop\surbhi_kori11\Surbhi-PPSlab-Sem1> git push origin main       
+Counting objects: 100% (22/22), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 43.10 KiB | 760.00 KiB/s, done.
+Total 17 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), completed with 1 local object.
+To https://github.com/korisurbhi/Surbhi-PPSlab-Sem1.git
+   08a7243..ff536b2  main -> main
+PS C:\Users\Kori\OneDrive\Desktop\surbhi_kori11\Surbhi-PPSlab-Sem1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
