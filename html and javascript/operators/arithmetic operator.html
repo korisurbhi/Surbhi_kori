@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic operator</title>
+</head>
+<body>
+    <script langauge="javascript" type="text/javascript">
+        document.write("1st method :");
+        document.write("<br>");
+        //var num1=40, num2=20;
+        var num1=parseInt(prompt("Enter 1st number","Enter..."));
+        var num2=parseFloat(prompt("Enter 2nd number","Enter...."));
+        document.write("1st Number: " + (num1));
+        document.write("<br>");
+        document.write("2nd Number: " + (num2));
+        document.write("<br>");
+        document.write("Addition: " +( num1 + num2));
+        document.write("<br>");
+        document.write("Subtraction: " + (num1 - num2));
+        document.write("<br>");
+        document.write("Multiplication: " +  (num1 * num2));
+        document.write("<br>");
+        document.write("Divide: " + (num1 / num2));
+        // "/ this is quotient part"
+        document.write("<br>");
+        document.write("remainder: " + (num1 % num2));
+        document.write("<br>");
+        // "% this is remainder part"
+        document.write("2nd method :");
+        document.write("<br>");
+        var result=num1+num2;
+        document.write("Adddition: " + (result));
+        document.write("<br>");
+        num1=num1+5;
+        document.write("1st Number + 5 by directly: " + (num1));//number incresed by 5
+        document.write("<br>");
+        num2+=5;
+        document.write("2nd Number + 5 by '+=' method: " + (num2));
+        document.write("<br>");
+        var num3=parseFloat(prompt("Enter A 3rd Number:","Enter...."));
+        document.write("3rd Number: " + (num3));
+        var total=num1+num2*num3;
+        document.write("<br>");
+        document.write("Total by BODMAS rule:"  + (total));
+        var total1=(num1+num2)*num3;
+        document.write("<br>");
+        document.write("Total by president's parenthesis (num1+num2)*num3 : " + (total1));
+        document.write("<br>");
+        var num4=10;
+        var num5=10;
+        var result1=num4++;//post
+        var result2=++num5;//pre
+        document.write(result1);
+        document.write("<br>");
+        document.write(result2);
+    </script>
+    
+</body>
+</html>

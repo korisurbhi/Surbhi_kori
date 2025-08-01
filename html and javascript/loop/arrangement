@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+    <title>its my first javascript</title>    
+    </head>
+    <body>
+    <script language="javascript" type="text/javascript">
+    var arr = new Array(6,40,46,28,29,44,11,44);
+    var i,j,temp;
+    document.write("<br/><br/> Before sort...<br/>");
+    for (i = 0; i < 8; i++)
+    {
+        document.write(arr[i] + "<br/>");
+    }
+    for (i = 0; i < 8; i++)
+    {
+        for (j = 0; j < 8; j++)
+        {
+            if (arr[j] < arr[j+1])
+            {
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    document.write("<br/><br/>After sort....<br/>");
+    for (i = 0; i < 8; i++)
+        {
+            document.write( arr[i]+ "<br/>");
+        }
+    </script>
+    </body>
+</html>

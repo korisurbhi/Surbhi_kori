@@ -1,0 +1,27 @@
+//this is basically use for any cards
+<html>
+    <head>
+        <title>do while loop demo
+        </title>
+    </head>
+    <body>
+        <script langauge="javascript" type="text/javascript">
+        var actualpin = "3456";
+        var pin;
+        var count = 0; 
+        do 
+        {
+            pin = prompt("Enter your pin....","Enter");
+            count++;
+        } while (pin != actualpin && count < 3);
+        if (pin == actualpin)
+        {
+            document.write("Welcome User");
+        }
+        else
+        {
+            document.write("oppps!!!! Account locked");
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> javascript demo </title>
+        <script langauge="javascript" type="text/javascript">
+            function sayHello(name, age)
+            {
+                if (name == "" || age == "")
+                return;
+                document.write(name + " is " + age + "years old.");
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click th following button to call the function</p>
+        <form>
+            <input name="t1" placeholder="Enter Name"/><br/><br/>
+            <input name="t2" placeholder="Enter Age"/><br/><br/>
+            <input type="button" onclick="sayHello(t1.value, t2.value)" value="click"/>
+        </form>
+    </body>
+</html>
