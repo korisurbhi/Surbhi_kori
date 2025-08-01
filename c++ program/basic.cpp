@@ -1,6 +1,6 @@
 #include<iostream>
 int main()
 {
-    std::cout<<"hello";
+    std::cout<<"Hello... It's my 1st c++ program";
     return 0;
 }
