@@ -10,7 +10,7 @@ struct book {
 
 int main() 
 {
-    book b[5];
+    book b[2];
     std::cout << "Enter information of 5 books:\n";
 
     for (int i = 0; i < 2; i++) 
