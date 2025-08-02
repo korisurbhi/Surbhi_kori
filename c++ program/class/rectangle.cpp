@@ -1,24 +1,25 @@
+#include<iostream>
 class Rectangle
 {
     public: int length,breadth,area;
     public: void getdata()
     {
-        cout<<"Enter length and breadth:";
-        cin>>length>>breadth;
+        std::cout<<"Enter length and breadth:";
+        std::cin>>length>>breadth;
     }
-    public: void solve()
+    public: void Area()
     {
         area=length*breadth;
     }
     public: void show()
     {
-        cout<<"Area ="<< area;
+        std::cout<<"Area ="<< area;
     }
 };
 int main()
 {
 Rectangle R1;
 R1.getdata();
-R1.solve();
+R1.Area();
 R1.show();
 }
