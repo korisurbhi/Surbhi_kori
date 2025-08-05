@@ -2,7 +2,8 @@
 #include <stack>
 using namespace std;
 
-int main() {
+int main() 
+{
     // create a stack of strings
     stack<string> languages;
     
