@@ -12,12 +12,13 @@ int main()
         }
         cout<<"\n";
     }
-    cout<<"matrix";
+    cout<<"matrix\n";
     for(i=0;i<3;i++)
     {
         for (j=0;j<3;j++)
         {
-            cout<<"matrix"<<matrix[i][j];
+            cout<<matrix[i][j];
+            cout<<"   ";
         }
         cout<<"\n";
     }
