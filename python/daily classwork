@@ -1,0 +1,25 @@
+print("number 1 to 5:")
+for i in range(1,6):
+    print(i)
+print("0 to 10 Even number:")
+for i in range(0,11,2):
+    print(i)
+print("0 to 10 Odd number:")
+for i in range(1,10,2):
+    print(i)
+print("1 to 5 square:")
+for i in range(1,6):
+    print(i**2)
+print("print value of list:")
+fruits=["Apple","Orange","lichi"]
+for i in fruits:
+    print(i)
+print("print 2 table:")
+for i in range(1,11):
+    print(i*2)
+print("print 2 table:")
+for i in range(1,11):
+    print(f" 2 * {i} = {i*2}")
+num=int(input("Enter a number :"))
+for i in range(1,11):
+    print(i*num)
