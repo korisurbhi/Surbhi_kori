@@ -12,17 +12,14 @@ int main()
         }
         cout<<"\n";
     }
-<<<<<<< HEAD
     cout<<"matrix is\n";
-=======
-    cout<<"matrix\n";
->>>>>>> 2f63b283330b377146bf083f298f378f7f32be62
+
     for(i=0;i<3;i++)
     {
         for (j=0;j<3;j++)
         {
             cout<<matrix[i][j];
-<<<<<<< HEAD
+            cout<<"   ";
         }
         cout<<"\n";
     }
@@ -32,9 +29,7 @@ int main()
         for (j=0;j<3;j++)
         {
             cout<<matrix[j][i];
-=======
             cout<<"   ";
->>>>>>> 2f63b283330b377146bf083f298f378f7f32be62
         }
         cout<<"\n";
     }
