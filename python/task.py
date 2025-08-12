@@ -16,4 +16,4 @@ if road == "LEFT":
     elif door == "YELLOW":
         print("CONGRATS....\n You Win.")
 else:  
-    print(" Fall into a hole.\nGame Over")
+    print("Fall into a hole.\nGame Over")
