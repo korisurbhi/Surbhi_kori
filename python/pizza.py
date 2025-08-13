@@ -5,26 +5,27 @@ extra_cheese = input("Do you want extra cheese? Y or N: ").upper()
 bill = 0
 
 if size == "S":
+    print("Small pizza is for $15")
     bill += 15
     if pepperoni == "Y":
         bill += 2
-        if extra_cheese == "Y":
-            bill += 1
+    elif extra_cheese == "Y":
+        bill += 1
 elif size == "M":
-     print("medium pizza is for $20 ")
-     bill += 20
-     if pepperoni == "Y":
-         bill += 3
-         if extra_cheese == "Y":
-             bill += 1
-elif size == "l":
-     print("large pizza is for $25")
-     bill += 25
-     if pepperoni == "Y":
-         bill += 3
-         if extra_cheese == "Y":
-             bill += 1
+    print("Medium pizza is for $20 ")
+    bill += 20
+    if pepperoni == "Y":
+        bill += 3
+    elif extra_cheese == "Y":
+        bill += 1
+elif size == "L":
+    print("Large pizza is for $25")
+    bill += 25
+    if pepperoni == "Y":
+        bill += 3
+    elif extra_cheese == "Y":
+        bill += 1
 else:
    print("Invalid size Entered.")
    exit()
-print(f"your final bill is:{bill}")
+print(f"Your final bill is: ${bill}")
