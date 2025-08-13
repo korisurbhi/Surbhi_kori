@@ -1,31 +1,28 @@
 print("Welcome to Python Burger Deliveries!")
-size = input("What type of Burger do you want? Veg OR non-veg: ").upper()
+type = input("What type of Burger do you want? Veg OR non-veg: ").upper()
 patty = input("Do you want extra patty? Y or N: ").upper()
 grilled = input("Do you want grilled bun? Y or N: ").upper()
 extra_cheese = input("Do you want extra cheese? Y or N: ").upper()
 bill = 0
 
-if size == "S":
-    print("Small pizza is for $15")
+if type == "VEG":
+    print("Veg burger is for $15")
     bill += 15
     if patty == "Y":
         bill += 2
-    elif extra_cheese == "Y":
-        bill += 1
-elif size == "M":
-    print("Medium pizza is for $20 ")
+    if extra_cheese == "Y":
+        bill += 2
+    if grilled == "Y":
+        bill += 3
+elif type == "NON VEG":
+    print("Non-Veg burger is for $20")
     bill += 20
     if patty == "Y":
+        bill += 2
+    if extra_cheese == "Y":
+        bill += 2
+    if grilled == "Y":
         bill += 3
-    elif extra_cheese == "Y":
-        bill += 1
-elif size == "L":
-    print("Large pizza is for $25")
-    bill += 25
-    if patty == "Y":
-        bill += 3
-    elif extra_cheese == "Y":
-        bill += 1
 else:
    print("Invalid size Entered.")
    exit()
