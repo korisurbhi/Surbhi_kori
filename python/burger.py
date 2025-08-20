@@ -10,19 +10,19 @@ if type == "VEG":
     bill += 15
     if patty == "Y":
         bill += 2
-    if extra_cheese == "Y":
-        bill += 2
     if grilled == "Y":
         bill += 3
+    if extra_cheese == "Y":
+        bill += 2
 elif type == "NON VEG":
     print("Non-Veg burger is for $20")
     bill += 20
     if patty == "Y":
         bill += 2
-    if extra_cheese == "Y":
-        bill += 2
     if grilled == "Y":
         bill += 3
+    if extra_cheese == "Y":
+        bill += 2
 else:
    print("Invalid size Entered.")
    exit()
