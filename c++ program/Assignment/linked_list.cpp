@@ -2,23 +2,27 @@
 using namespace std;
 
 // Node structure
-class Node {
+class Node 
+{
 public:
     int data;
     Node* next;
 };
 
 // Linked list class
-class LinkedList {
+class LinkedList
+{
 public:
     Node* head;
 
-    LinkedList() {
+    LinkedList() 
+    {
         head = nullptr; // start with empty list
     }
 
     // Function to insert a new node at the end
-    void insert(int value) {
+    void insert(int value) 
+    {
         Node* newNode = new Node();
         newNode->data = value;
         newNode->next = nullptr;
