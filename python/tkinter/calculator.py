@@ -1,7 +1,7 @@
 import tkinter as tk
 
 root = tk.Tk()
-root.title("simple widget example")
+root.title("Calculator")
 root.geometry("300x200")
 
 label_num1 = tk.Label(root, text="Enter number:",font=("Arial",12))
