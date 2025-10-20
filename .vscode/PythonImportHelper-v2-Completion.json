@@ -1,0 +1,920 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "python.class.classes&objects",
+        "description": "python.class.classes&objects",
+        "peekOfCode": "class Student:\n    def __init__(self, name , roll_no):\n        self.name = name\n        self.roll_no = roll_no\n    def display(self):\n        print(\"Name:\", self.name)\n        print(\"Roll no.:\", self.roll_no)\nname=input(\"enter name: \")\nroll_no=int(input(\"enter roll no: \"))\ns1=Student(name,roll_no)",
+        "detail": "python.class.classes&objects",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def greet():\n    print(\"Hello! Welcome ot Python.\")\n#call the function\ngreet()\nprint(\"2. Funtion With parameters\")\n#function declaration\ndef greet(name):\n    print(\"Hello\", name)\n# call the function\ngreet(\"surbhi\")",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def greet(name):\n    print(\"Hello\", name)\n# call the function\ngreet(\"surbhi\")\nprint(\"3. Function with return value\")\n#function declaration\ndef add(a, b):\n    return a + b\n#Call the function and print result\nresult = add (5, 3)",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def add(a, b):\n    return a + b\n#Call the function and print result\nresult = add (5, 3)\nprint(\"Addtion is : \", result)\nprint(\"4. Function to check Even or Odd\")\n#function declaration\ndef check_even_odd(number):\n    if number % 2 ==0:\n        print(f\"The number {number} is Even.\")",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "check_even_odd",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def check_even_odd(number):\n    if number % 2 ==0:\n        print(f\"The number {number} is Even.\")\n    else:\n        print(f\"The number {number} is Odd.\")\n#call the function\ncheck_even_odd(7)\ncheck_even_odd(164)\nprint(\"5. Function to find Factorial \")\n#function declaration ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def factorial(n):\n    result = 1\n    for i in range (1, n+1):\n        result *= i\n    return result\n#call the function\nprint (\"Factorial of 5 is : \", factorial(5))\nprint(\"6. Function to find Maximum of two numbers\")\n#function declaration\ndef maximum(x, y):",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "maximum",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def maximum(x, y):\n    if x > y:\n        return x\n    else:\n        return y \n#call the function\nprint(\"Maximum is :\", maximum(10, 20))\nprint(\"7. Function to print table of a Number\")\n#function declaration\ndef print_table(n):",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "print_table",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def print_table(n):\n    for i in range (1, 11):\n        print(f\"{n} * {i} = {n*i}\")\n#call the function\nprint_table(5)\nprint(\"8. Function with default argument\")\n#function declaration\ndef greet (name=\"student\"):\n    print (\"hello\", name)\n#call the function",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "gree",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def greet (name=\"student\"):\n    print (\"hello\", name)\n#call the function\ngreet()         #uses default\ngreet(\"surbhi\") #uses given value\nprint(\"9. Function to Count Vowels in a String\")\ndef count_vowels(text): \n    vowels = \"aeiouAEIOU\" \n    count = 0 \n    for ch in text: ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "count_vowels",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def count_vowels(text): \n    vowels = \"aeiouAEIOU\" \n    count = 0 \n    for ch in text: \n        if ch in vowels: \n            count += 1 \n    return count \nprint(\"Vowel count:\", count_vowels(\"Hello World\")) \nprint(\"10. Function to Check Prime Number\")\ndef is_prime(num): ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def is_prime(num): \n    if num <= 1: \n        return False \n    for i in range(2, num): \n        if num % i == 0: \n            return False \n    return True \nprint(\"Is 7 prime?\", is_prime(7)) \nprint(\"11. Function to Calculate Area of Circle\")\ndef area_of_circle(radius): ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "area_of_circle",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def area_of_circle(radius): \n    pi = 3.14159 \n    return pi * radius * radius \nprint(\"Area:\", area_of_circle(5)) \nprint(\"12. Function to Reverse a String\")\ndef reverse_string(s): \n    return s[::-1] \nprint(\"Reverse:\", reverse_string(\"Python\")) \nprint(\"13. Function to Convert Celsius to Fahrenheit\")\ndef celsius_to_fahrenheit(celsius): ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_string",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def reverse_string(s): \n    return s[::-1] \nprint(\"Reverse:\", reverse_string(\"Python\")) \nprint(\"13. Function to Convert Celsius to Fahrenheit\")\ndef celsius_to_fahrenheit(celsius): \n    return (celsius * 9/5) + 32 \nprint(\"Fahrenheit:\", celsius_to_fahrenheit(37)) \nprint(\"14. Function to Sum Elements of a List\")\ndef sum_list(lst): \n    total = 0 ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "celsius_to_fahrenheit",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def celsius_to_fahrenheit(celsius): \n    return (celsius * 9/5) + 32 \nprint(\"Fahrenheit:\", celsius_to_fahrenheit(37)) \nprint(\"14. Function to Sum Elements of a List\")\ndef sum_list(lst): \n    total = 0 \n    for item in lst: \n        total += item \n    return total \nprint(\"Sum of list:\", sum_list([1, 2, 3, 4, 5])) ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "sum_list",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def sum_list(lst): \n    total = 0 \n    for item in lst: \n        total += item \n    return total \nprint(\"Sum of list:\", sum_list([1, 2, 3, 4, 5])) \nprint(\"15. Function to Find Length of a String (without using len())\")\ndef string_length(s): \n    count = 0 \n    for _ in s: ",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "string_length",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def string_length(s): \n    count = 0 \n    for _ in s: \n        count += 1 \n    return count \nprint(\"Length:\", string_length(\"Python\")) \nprint(\"16. Function to Check Palindrome \")  \ndef is_palindrome(s): \n    return s == s[::-1] \nprint(\"Is 'madam' a palindrome?\", is_palindrome(\"madam\"))",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "is_palindrome",
+        "kind": 2,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "def is_palindrome(s): \n    return s == s[::-1] \nprint(\"Is 'madam' a palindrome?\", is_palindrome(\"madam\"))",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "python.function.function",
+        "description": "python.function.function",
+        "peekOfCode": "result = add (5, 3)\nprint(\"Addtion is : \", result)\nprint(\"4. Function to check Even or Odd\")\n#function declaration\ndef check_even_odd(number):\n    if number % 2 ==0:\n        print(f\"The number {number} is Even.\")\n    else:\n        print(f\"The number {number} is Odd.\")\n#call the function",
+        "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "name = \"Python Basics\" \nprint(\"String:\", name) \n# List \nfruits = [\"apple\", \"banana\", \"cherry\"] \nprint(\"List:\", fruits) \n# Dictionary \nstudent = {\"name\": \"Amit\", \"age\": 21, \"branch\": \"CSE\"} \nprint(\"Dictionary:\", student) \n# Set \ncolors = {\"red\", \"green\", \"blue\"} ",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "fruits = [\"apple\", \"banana\", \"cherry\"] \nprint(\"List:\", fruits) \n# Dictionary \nstudent = {\"name\": \"Amit\", \"age\": 21, \"branch\": \"CSE\"} \nprint(\"Dictionary:\", student) \n# Set \ncolors = {\"red\", \"green\", \"blue\"} \nprint(\"Set:\", colors) \n# Tuple \ncoordinates = (10.5, 20.3) ",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "student = {\"name\": \"Amit\", \"age\": 21, \"branch\": \"CSE\"} \nprint(\"Dictionary:\", student) \n# Set \ncolors = {\"red\", \"green\", \"blue\"} \nprint(\"Set:\", colors) \n# Tuple \ncoordinates = (10.5, 20.3) \nprint(\"Tuple:\", coordinates) \nprint(\"\\n--- Control Statements ---\") \n# If statement ",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "colors = {\"red\", \"green\", \"blue\"} \nprint(\"Set:\", colors) \n# Tuple \ncoordinates = (10.5, 20.3) \nprint(\"Tuple:\", coordinates) \nprint(\"\\n--- Control Statements ---\") \n# If statement \nnum = 15 \nif num % 2 == 0: \n    print(num, \"is even\") ",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "coordinates",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "coordinates = (10.5, 20.3) \nprint(\"Tuple:\", coordinates) \nprint(\"\\n--- Control Statements ---\") \n# If statement \nnum = 15 \nif num % 2 == 0: \n    print(num, \"is even\") \nelse: \n    print(num, \"is odd\") \n# For loop: print fruits ",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "num = 15 \nif num % 2 == 0: \n    print(num, \"is even\") \nelse: \n    print(num, \"is odd\") \n# For loop: print fruits \nprint(\"\\nFruits in list:\") \nfor fruit in fruits: \n    print(fruit) \n# While loop: ",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.1st",
+        "description": "python.practical_3rd_sem.1st",
+        "peekOfCode": "i = 1 \nwhile i <= 5: \n    print(i) \n    i += 1",
+        "detail": "python.practical_3rd_sem.1st",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "python.practical_3rd_sem.2nd",
+        "description": "python.practical_3rd_sem.2nd",
+        "peekOfCode": "class Person: \n    def __init__(self, name): \n        self.name = name \n    def display(self): \n        print(\"Name:\", self.name) \n# Derived class (Inheritance) \nclass Student(Person): \n    def __init__(self, name, roll_no): \n        super().__init__(name)   # calling parent constructor \n        self.roll_no = roll_no ",
+        "detail": "python.practical_3rd_sem.2nd",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "python.practical_3rd_sem.2nd",
+        "description": "python.practical_3rd_sem.2nd",
+        "peekOfCode": "class Student(Person): \n    def __init__(self, name, roll_no): \n        super().__init__(name)   # calling parent constructor \n        self.roll_no = roll_no \n    def display(self): \n        super().display() \n        print(\"Roll No:\", self.roll_no) \n# Creating object \ns1 = Student(\"Amit\", 101) \n# Using object to call method ",
+        "detail": "python.practical_3rd_sem.2nd",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.2nd",
+        "description": "python.practical_3rd_sem.2nd",
+        "peekOfCode": "def divide(a, b): \n    try: \n        result = a / b \n        print(\"Result:\", result) \n    except ZeroDivisionError: \n        print(\"Error: Cannot divide by zero\") \n# Base class \nclass Person: \n    def __init__(self, name): \n        self.name = name ",
+        "detail": "python.practical_3rd_sem.2nd",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.2nd",
+        "description": "python.practical_3rd_sem.2nd",
+        "peekOfCode": "s1 = Student(\"Amit\", 101) \n# Using object to call method \nprint(\"Student Info:\") \ns1.display() \n# Using the function with valid input \nprint(\"\\nDivision with valid input:\") \nnum1= int(input(\"Enter number:\"))\nnum2= int(input(\"Enter number:\"))\nprint(divide(num1, num2))",
+        "detail": "python.practical_3rd_sem.2nd",
+        "documentation": {}
+    },
+    {
+        "label": "file_name",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.3rd",
+        "description": "python.practical_3rd_sem.3rd",
+        "peekOfCode": "file_name = \"simple.txt\"\n# Append mode ('a') to add data \nwith open(file_name, 'a') as f: \n    f.write(\"\\nThis is a new line appended to the file.\") \n# Read and display full file content \nwith open(file_name, 'r') as f: \n    content = f.read() \n    print(\"File Contents:\\n\") \n    print(content)",
+        "detail": "python.practical_3rd_sem.3rd",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.4th",
+        "description": "python.practical_3rd_sem.4th",
+        "peekOfCode": "def greet(): \n    name = entry.get() \n    output.config(text=f\"Hello, {name}!\") \nbutton = tk.Button(root, text=\"Greet\", command=greet) \nbutton.pack(pady=5) \n# Output label \noutput = tk.Label(root, text=\"\") \noutput.pack() \n# Start the GUI loop \nroot.mainloop()",
+        "detail": "python.practical_3rd_sem.4th",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.4th",
+        "description": "python.practical_3rd_sem.4th",
+        "peekOfCode": "root = tk.Tk() \nroot.title(\"Simple Widget Example\") \nroot.geometry(\"300x200\") \n# Label \nlabel = tk.Label(root, text=\"Enter your name:\", font=(\"Arial\", 12)) \nlabel.pack(pady=10) \n# Entry box \nentry = tk.Entry(root, width=25) \nentry.pack() \n# Button with action ",
+        "detail": "python.practical_3rd_sem.4th",
+        "documentation": {}
+    },
+    {
+        "label": "label",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.4th",
+        "description": "python.practical_3rd_sem.4th",
+        "peekOfCode": "label = tk.Label(root, text=\"Enter your name:\", font=(\"Arial\", 12)) \nlabel.pack(pady=10) \n# Entry box \nentry = tk.Entry(root, width=25) \nentry.pack() \n# Button with action \ndef greet(): \n    name = entry.get() \n    output.config(text=f\"Hello, {name}!\") \nbutton = tk.Button(root, text=\"Greet\", command=greet) ",
+        "detail": "python.practical_3rd_sem.4th",
+        "documentation": {}
+    },
+    {
+        "label": "entry",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.4th",
+        "description": "python.practical_3rd_sem.4th",
+        "peekOfCode": "entry = tk.Entry(root, width=25) \nentry.pack() \n# Button with action \ndef greet(): \n    name = entry.get() \n    output.config(text=f\"Hello, {name}!\") \nbutton = tk.Button(root, text=\"Greet\", command=greet) \nbutton.pack(pady=5) \n# Output label \noutput = tk.Label(root, text=\"\") ",
+        "detail": "python.practical_3rd_sem.4th",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.4th",
+        "description": "python.practical_3rd_sem.4th",
+        "peekOfCode": "button = tk.Button(root, text=\"Greet\", command=greet) \nbutton.pack(pady=5) \n# Output label \noutput = tk.Label(root, text=\"\") \noutput.pack() \n# Start the GUI loop \nroot.mainloop()",
+        "detail": "python.practical_3rd_sem.4th",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "python.practical_3rd_sem.4th",
+        "description": "python.practical_3rd_sem.4th",
+        "peekOfCode": "output = tk.Label(root, text=\"\") \noutput.pack() \n# Start the GUI loop \nroot.mainloop()",
+        "detail": "python.practical_3rd_sem.4th",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.5th",
+        "description": "python.practical_3rd_sem.5th",
+        "peekOfCode": "def create_connection(): \n    return mysql.connector.connect( \n        host=\"localhost\",   # Change if hosted elsewhere \n        user=\"root\",        # Your MySQL username \n        password=\"root123\", # Your MySQL password \n        database=\"shikha\"   # Database we created \n    ) \n# ---------- CREATE TABLE ---------- \ndef create_table(): \n    conn = create_connection() ",
+        "detail": "python.practical_3rd_sem.5th",
+        "documentation": {}
+    },
+    {
+        "label": "create_table",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.5th",
+        "description": "python.practical_3rd_sem.5th",
+        "peekOfCode": "def create_table(): \n    conn = create_connection() \n    cursor = conn.cursor() \n    cursor.execute(''' \n        CREATE TABLE IF NOT EXISTS students ( \n            id INT AUTO_INCREMENT PRIMARY KEY, \n            name VARCHAR(100), \n            age INT \n        ) \n    ''') ",
+        "detail": "python.practical_3rd_sem.5th",
+        "documentation": {}
+    },
+    {
+        "label": "insert_student",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.5th",
+        "description": "python.practical_3rd_sem.5th",
+        "peekOfCode": "def insert_student(name, age): \n    conn = create_connection() \n    cursor = conn.cursor() \n    cursor.execute(\"INSERT INTO students (name, age) VALUES (%s, %s)\", \n(name, age)) \n    conn.commit() \n    conn.close() \n# ---------- READ ---------- \ndef fetch_students(): \n    conn = create_connection() ",
+        "detail": "python.practical_3rd_sem.5th",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_students",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.5th",
+        "description": "python.practical_3rd_sem.5th",
+        "peekOfCode": "def fetch_students(): \n    conn = create_connection() \n    cursor = conn.cursor() \n    cursor.execute(\"SELECT * FROM students\") \n    rows = cursor.fetchall() \n    for row in rows: \n        print(row) \n    conn.close() \n# ---------- UPDATE ---------- \ndef update_student(student_id, new_age): ",
+        "detail": "python.practical_3rd_sem.5th",
+        "documentation": {}
+    },
+    {
+        "label": "update_student",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.5th",
+        "description": "python.practical_3rd_sem.5th",
+        "peekOfCode": "def update_student(student_id, new_age): \n    conn = create_connection() \n    cursor = conn.cursor() \n    cursor.execute(\"UPDATE students SET age=%s WHERE id=%s\", (new_age, \nstudent_id)) \n    conn.commit() \n    conn.close() \n# ---------- DELETE ---------- \ndef delete_student(student_id): \n    conn = create_connection() ",
+        "detail": "python.practical_3rd_sem.5th",
+        "documentation": {}
+    },
+    {
+        "label": "delete_student",
+        "kind": 2,
+        "importPath": "python.practical_3rd_sem.5th",
+        "description": "python.practical_3rd_sem.5th",
+        "peekOfCode": "def delete_student(student_id): \n    conn = create_connection() \n    cursor = conn.cursor() \n    cursor.execute(\"DELETE FROM students WHERE id=%s\", (student_id,)) \n    conn.commit() \n    conn.close() \n# ---------- MAIN PROGRAM ---------- \nif __name__ == \"__main__\": \n    create_table() \n    print(\"Inserting records...\") ",
+        "detail": "python.practical_3rd_sem.5th",
+        "documentation": {}
+    },
+    {
+        "label": "addition",
+        "kind": 2,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "def addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = float(num1) + float(num2)\n    output.config(text=f\"addition is{add}!\")\ndef subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = float(num1) - float(num2)\n    output.config(text=f\"subtraction is{sub}!\")",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "subtraction",
+        "kind": 2,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "def subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = float(num1) - float(num2)\n    output.config(text=f\"subtraction is{sub}!\")\nbutton_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"simple widget example\")\nroot.geometry(\"300x200\")\nlabel_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "label_num1",
+        "kind": 5,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "label_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "label_num2",
+        "kind": 5,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "label_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = float(num1) + float(num2)\n    output.config(text=f\"addition is{add}!\")\ndef subtraction():",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "button_frame",
+        "kind": 5,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "button_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "button2",
+        "kind": 5,
+        "importPath": "python.tkinter.addition_using_tkinter",
+        "description": "python.tkinter.addition_using_tkinter",
+        "peekOfCode": "button2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.tkinter.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "addition",
+        "kind": 2,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "def addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = int(num1) + int(num2)\n    output.config(text=f\"addition is {add}.\")\ndef subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = int(num1) - int(num2)\n    output.config(text=f\"subtraction is {sub}.\")",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "subtraction",
+        "kind": 2,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "def subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = int(num1) - int(num2)\n    output.config(text=f\"subtraction is {sub}.\")\ndef multiplication():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    mul = int(num1)* int(num2)\n    output.config(text=f\"Multiplication is {mul}.\")",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "multiplication",
+        "kind": 2,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "def multiplication():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    mul = int(num1)* int(num2)\n    output.config(text=f\"Multiplication is {mul}.\")\ndef division():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    div = int(num1) / int(num2)\n    output.config(text=f\"division is {div}.\")",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "division",
+        "kind": 2,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "def division():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    div = int(num1) / int(num2)\n    output.config(text=f\"division is {div}.\")\nbutton_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Calculator\")\nroot.geometry(\"300x200\")\nlabel_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "label_num1",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "label_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "label_num2",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "label_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = int(num1) + int(num2)\n    output.config(text=f\"addition is {add}.\")\ndef subtraction():",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button_frame",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "button_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button2",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "button2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button3",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "button3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button3",
+        "kind": 5,
+        "importPath": "python.tkinter.calculator",
+        "description": "python.tkinter.calculator",
+        "peekOfCode": "button3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.tkinter.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "type",
+        "kind": 5,
+        "importPath": "python.burger",
+        "description": "python.burger",
+        "peekOfCode": "type = input(\"What type of Burger do you want? Veg OR non-veg: \").upper()\npatty = input(\"Do you want extra patty? Y or N: \").upper()\ngrilled = input(\"Do you want grilled bun? Y or N: \").upper()\nextra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif type == \"VEG\":\n    print(\"Veg burger is for $15\")\n    bill += 15\n    if patty == \"Y\":\n        bill += 2",
+        "detail": "python.burger",
+        "documentation": {}
+    },
+    {
+        "label": "patty",
+        "kind": 5,
+        "importPath": "python.burger",
+        "description": "python.burger",
+        "peekOfCode": "patty = input(\"Do you want extra patty? Y or N: \").upper()\ngrilled = input(\"Do you want grilled bun? Y or N: \").upper()\nextra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif type == \"VEG\":\n    print(\"Veg burger is for $15\")\n    bill += 15\n    if patty == \"Y\":\n        bill += 2\n    if grilled == \"Y\":",
+        "detail": "python.burger",
+        "documentation": {}
+    },
+    {
+        "label": "grilled",
+        "kind": 5,
+        "importPath": "python.burger",
+        "description": "python.burger",
+        "peekOfCode": "grilled = input(\"Do you want grilled bun? Y or N: \").upper()\nextra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif type == \"VEG\":\n    print(\"Veg burger is for $15\")\n    bill += 15\n    if patty == \"Y\":\n        bill += 2\n    if grilled == \"Y\":\n        bill += 3",
+        "detail": "python.burger",
+        "documentation": {}
+    },
+    {
+        "label": "extra_cheese",
+        "kind": 5,
+        "importPath": "python.burger",
+        "description": "python.burger",
+        "peekOfCode": "extra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif type == \"VEG\":\n    print(\"Veg burger is for $15\")\n    bill += 15\n    if patty == \"Y\":\n        bill += 2\n    if grilled == \"Y\":\n        bill += 3\n    if extra_cheese == \"Y\":",
+        "detail": "python.burger",
+        "documentation": {}
+    },
+    {
+        "label": "bill",
+        "kind": 5,
+        "importPath": "python.burger",
+        "description": "python.burger",
+        "peekOfCode": "bill = 0\nif type == \"VEG\":\n    print(\"Veg burger is for $15\")\n    bill += 15\n    if patty == \"Y\":\n        bill += 2\n    if grilled == \"Y\":\n        bill += 3\n    if extra_cheese == \"Y\":\n        bill += 2",
+        "detail": "python.burger",
+        "documentation": {}
+    },
+    {
+        "label": "size",
+        "kind": 5,
+        "importPath": "python.pizza",
+        "description": "python.pizza",
+        "peekOfCode": "size = input(\"What size pizza do you want? S, M or L: \").upper()\npepperoni = input(\"Do you want pepperoni on your pizza? Y or N: \").upper()\nextra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif size == \"S\":\n    print(\"Small pizza is for $15\")\n    bill += 15\n    if pepperoni == \"Y\":\n        bill += 2\n    elif extra_cheese == \"Y\":",
+        "detail": "python.pizza",
+        "documentation": {}
+    },
+    {
+        "label": "pepperoni",
+        "kind": 5,
+        "importPath": "python.pizza",
+        "description": "python.pizza",
+        "peekOfCode": "pepperoni = input(\"Do you want pepperoni on your pizza? Y or N: \").upper()\nextra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif size == \"S\":\n    print(\"Small pizza is for $15\")\n    bill += 15\n    if pepperoni == \"Y\":\n        bill += 2\n    elif extra_cheese == \"Y\":\n        bill += 1",
+        "detail": "python.pizza",
+        "documentation": {}
+    },
+    {
+        "label": "extra_cheese",
+        "kind": 5,
+        "importPath": "python.pizza",
+        "description": "python.pizza",
+        "peekOfCode": "extra_cheese = input(\"Do you want extra cheese? Y or N: \").upper()\nbill = 0\nif size == \"S\":\n    print(\"Small pizza is for $15\")\n    bill += 15\n    if pepperoni == \"Y\":\n        bill += 2\n    elif extra_cheese == \"Y\":\n        bill += 1\nelif size == \"M\":",
+        "detail": "python.pizza",
+        "documentation": {}
+    },
+    {
+        "label": "bill",
+        "kind": 5,
+        "importPath": "python.pizza",
+        "description": "python.pizza",
+        "peekOfCode": "bill = 0\nif size == \"S\":\n    print(\"Small pizza is for $15\")\n    bill += 15\n    if pepperoni == \"Y\":\n        bill += 2\n    elif extra_cheese == \"Y\":\n        bill += 1\nelif size == \"M\":\n    print(\"Medium pizza is for $20 \")",
+        "detail": "python.pizza",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "word = \"Python\" \nprint(\"First character:\", word[0]) \nprint(\"Last character:\", word[-1]) \nprint(\"\\n\")\nprint(\"3. String slicing\")\ntext = \"Programming\" \nprint(\"Slice (0 to 6):\", text[0:7]) \nprint(\"\\n\")\nprint(\"4. String concatenation\")   \nfirst = \"Hello\" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "text = \"Programming\" \nprint(\"Slice (0 to 6):\", text[0:7]) \nprint(\"\\n\")\nprint(\"4. String concatenation\")   \nfirst = \"Hello\" \nsecond = \"World\" \nresult = first + \" \" + second \nprint(result) \nprint(\"\\n\")\nprint(\"5. String repetition\") ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "first",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "first = \"Hello\" \nsecond = \"World\" \nresult = first + \" \" + second \nprint(result) \nprint(\"\\n\")\nprint(\"5. String repetition\") \nword = \"Hello \" \nprint(word * 3) \nprint(\"\\n\")\nprint(\"6. Loop through a string\") ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "second",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "second = \"World\" \nresult = first + \" \" + second \nprint(result) \nprint(\"\\n\")\nprint(\"5. String repetition\") \nword = \"Hello \" \nprint(word * 3) \nprint(\"\\n\")\nprint(\"6. Loop through a string\") \nname = \"Attack on titans\" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "result = first + \" \" + second \nprint(result) \nprint(\"\\n\")\nprint(\"5. String repetition\") \nword = \"Hello \" \nprint(word * 3) \nprint(\"\\n\")\nprint(\"6. Loop through a string\") \nname = \"Attack on titans\" \nfor letter in name: ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "word = \"Hello \" \nprint(word * 3) \nprint(\"\\n\")\nprint(\"6. Loop through a string\") \nname = \"Attack on titans\" \nfor letter in name: \n    print(letter) \nprint(\"\\n\")\nprint(\"7. Check substring\")  \nsentence = \"Python is fun\" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "name = \"Attack on titans\" \nfor letter in name: \n    print(letter) \nprint(\"\\n\")\nprint(\"7. Check substring\")  \nsentence = \"Python is fun\" \nif \"fun\" in sentence: \n    print(\"The word 'fun' is present.\") \nprint(\"\\n\")\nprint(\"8. String methods\")    ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "sentence = \"Python is fun\" \nif \"fun\" in sentence: \n    print(\"The word 'fun' is present.\") \nprint(\"\\n\")\nprint(\"8. String methods\")    \ns = \"hello world\" \nprint(\"Uppercase:\", s.upper()) \nprint(\"Capitalized:\", s.capitalize()) \nprint(\"Replaced:\", s.replace(\"world\", \"Python\")) \nprint(\"Split:\", s.split()) ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "s = \"hello world\" \nprint(\"Uppercase:\", s.upper()) \nprint(\"Capitalized:\", s.capitalize()) \nprint(\"Replaced:\", s.replace(\"world\", \"Python\")) \nprint(\"Split:\", s.split()) \nprint(\"\\n\")\nprint(\"9. String length\")   \nmy_str = \"Surbhi kori\" \nprint(\"Length of string:\", len(my_str)) \nprint(\"\\n\")",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "my_str",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "my_str = \"Surbhi kori\" \nprint(\"Length of string:\", len(my_str)) \nprint(\"\\n\")\nprint(\"10. Reverse a string\") \ntext = \"surbhi\" \nreversed_text = text[::-1] \nprint(\"Reversed string:\", reversed_text)\nprint(\"\\n\")\nprint(\"11. Check if a string is a palindrome\")   \nword = \"madam\" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "text = \"surbhi\" \nreversed_text = text[::-1] \nprint(\"Reversed string:\", reversed_text)\nprint(\"\\n\")\nprint(\"11. Check if a string is a palindrome\")   \nword = \"madam\" \nif word == word[::-1]: \n    print(\"It's a palindrome\") \nelse: \n    print(\"Not a palindrome\") ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "reversed_text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "reversed_text = text[::-1] \nprint(\"Reversed string:\", reversed_text)\nprint(\"\\n\")\nprint(\"11. Check if a string is a palindrome\")   \nword = \"madam\" \nif word == word[::-1]: \n    print(\"It's a palindrome\") \nelse: \n    print(\"Not a palindrome\") \nprint(\"\\n\")",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "word = \"madam\" \nif word == word[::-1]: \n    print(\"It's a palindrome\") \nelse: \n    print(\"Not a palindrome\") \nprint(\"\\n\")\nprint(\"12. Count vowels in a string \")\ntext = \"Programming is fun\" \nvowels = \"aeiouAEIOU\" \ncount = 0 ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "text = \"Programming is fun\" \nvowels = \"aeiouAEIOU\" \ncount = 0 \nfor char in text: \n    if char in vowels: \n        count += 1 \nprint(\"Number of vowels:\", count) \nprint(\"\\n\")\nprint(\"13. Remove spaces from a string\")  \nsentence = \"  Hello   World  \" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "vowels",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "vowels = \"aeiouAEIOU\" \ncount = 0 \nfor char in text: \n    if char in vowels: \n        count += 1 \nprint(\"Number of vowels:\", count) \nprint(\"\\n\")\nprint(\"13. Remove spaces from a string\")  \nsentence = \"  Hello   World  \" \ncleaned = sentence.strip() ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "count = 0 \nfor char in text: \n    if char in vowels: \n        count += 1 \nprint(\"Number of vowels:\", count) \nprint(\"\\n\")\nprint(\"13. Remove spaces from a string\")  \nsentence = \"  Hello   World  \" \ncleaned = sentence.strip() \nprint(\"Trimmed string:\", cleaned)",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "sentence = \"  Hello   World  \" \ncleaned = sentence.strip() \nprint(\"Trimmed string:\", cleaned)\nprint(\"\\n\")\nprint(\"14. Check if string is numeric\")   \nnum_str = \"12345\" \nif num_str.isdigit(): \n    print(\"It's numeric\") \nprint(\"\\n\")\nprint(\"15. Join a list of strings\")   ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "cleaned",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "cleaned = sentence.strip() \nprint(\"Trimmed string:\", cleaned)\nprint(\"\\n\")\nprint(\"14. Check if string is numeric\")   \nnum_str = \"12345\" \nif num_str.isdigit(): \n    print(\"It's numeric\") \nprint(\"\\n\")\nprint(\"15. Join a list of strings\")   \nwords = [\"Python\", \"is\", \"awesome\"] ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "num_str",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "num_str = \"12345\" \nif num_str.isdigit(): \n    print(\"It's numeric\") \nprint(\"\\n\")\nprint(\"15. Join a list of strings\")   \nwords = [\"Python\", \"is\", \"awesome\"] \nsentence = \" \".join(words) \nprint(sentence) \nprint(\"\\n\")\nprint(\"16. Change case of each character\")",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "words = [\"Python\", \"is\", \"awesome\"] \nsentence = \" \".join(words) \nprint(sentence) \nprint(\"\\n\")\nprint(\"16. Change case of each character\")\ntext = \"Hello World\" \nprint(\"Upper:\", text.upper()) \nprint(\"Lower:\", text.lower()) \nprint(\"Swapcase:\", text.swapcase()) \nprint(\"\\n\")",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "sentence = \" \".join(words) \nprint(sentence) \nprint(\"\\n\")\nprint(\"16. Change case of each character\")\ntext = \"Hello World\" \nprint(\"Upper:\", text.upper()) \nprint(\"Lower:\", text.lower()) \nprint(\"Swapcase:\", text.swapcase()) \nprint(\"\\n\")\nprint(\"17. Find position of a substring\")   ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "text = \"Hello World\" \nprint(\"Upper:\", text.upper()) \nprint(\"Lower:\", text.lower()) \nprint(\"Swapcase:\", text.swapcase()) \nprint(\"\\n\")\nprint(\"17. Find position of a substring\")   \nline = \"Learn Python Programming\" \nposition = line.find(\"Python\") \nprint(\"Position of 'Python':\", position) \nprint(\"\\n\")",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "line",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "line = \"Learn Python Programming\" \nposition = line.find(\"Python\") \nprint(\"Position of 'Python':\", position) \nprint(\"\\n\")\nprint(\"18. Replace multiple characters\")  \ntext = \"apple, banana, mango\" \nnew_text = text.replace(\"a\", \"*\") \nprint(new_text) \nprint(\"\\n\")\nprint(\"19. Check if string starts or ends with a word\")   ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "position",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "position = line.find(\"Python\") \nprint(\"Position of 'Python':\", position) \nprint(\"\\n\")\nprint(\"18. Replace multiple characters\")  \ntext = \"apple, banana, mango\" \nnew_text = text.replace(\"a\", \"*\") \nprint(new_text) \nprint(\"\\n\")\nprint(\"19. Check if string starts or ends with a word\")   \nline = \"Hello, world!\" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "text = \"apple, banana, mango\" \nnew_text = text.replace(\"a\", \"*\") \nprint(new_text) \nprint(\"\\n\")\nprint(\"19. Check if string starts or ends with a word\")   \nline = \"Hello, world!\" \nprint(line.startswith(\"Hello\")) \nprint(line.endswith(\"world!\")) \nprint(\"\\n\")\nprint(\"20. Count words in a sentence \")   ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "new_text",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "new_text = text.replace(\"a\", \"*\") \nprint(new_text) \nprint(\"\\n\")\nprint(\"19. Check if string starts or ends with a word\")   \nline = \"Hello, world!\" \nprint(line.startswith(\"Hello\")) \nprint(line.endswith(\"world!\")) \nprint(\"\\n\")\nprint(\"20. Count words in a sentence \")   \nsentence = \"Python is a powerful language\" ",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "line",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "line = \"Hello, world!\" \nprint(line.startswith(\"Hello\")) \nprint(line.endswith(\"world!\")) \nprint(\"\\n\")\nprint(\"20. Count words in a sentence \")   \nsentence = \"Python is a powerful language\" \nword_list = sentence.split() \nprint(\"Number of words:\", len(word_list))",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "sentence = \"Python is a powerful language\" \nword_list = sentence.split() \nprint(\"Number of words:\", len(word_list))",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "word_list",
+        "kind": 5,
+        "importPath": "python.string",
+        "description": "python.string",
+        "peekOfCode": "word_list = sentence.split() \nprint(\"Number of words:\", len(word_list))",
+        "detail": "python.string",
+        "documentation": {}
+    },
+    {
+        "label": "road",
+        "kind": 5,
+        "importPath": "python.task",
+        "description": "python.task",
+        "peekOfCode": "road = input(\"Choose the Left or Right road : \").upper()\nif road == \"LEFT\":\n    print(\"Good job...\\nyou chosen correct Road.\\n\")\n    way = input(\"Choose to Wait or Swim : \").upper()\n    if way == \"WAIT\":\n        print(\"Great job...\\nYou chosen perfect way.\\n\")\n        door = input(\"Choose one Door from Red , Yellow or blue : \").upper()\n    else:\n        print(\"Attacked by trout.\\nGame Over\")\n        exit()",
+        "detail": "python.task",
+        "documentation": {}
+    }
+]
