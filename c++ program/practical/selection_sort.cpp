@@ -1,6 +1,6 @@
 #include<iostream> 
 using namespace std; 
-void bubble_sort(int list[30],int n); 
+void selection_sort (int list[],int n); 
 int main() 
 { 
     int n,i; 
@@ -10,22 +10,25 @@ int main()
     cout<<"enter "<<n<<" numbers "; 
     for(i=0;i<n;i++) 
         cin>>list[i]; 
-    bubble_sort (list,n); 
+    selection_sort (list,n); 
     cout<<" after sorting\n"; 
     for(i=0;i<n;i++) 
         cout<<list[i]<<endl; 
     return 0; 
 } 
-void bubble_sort (int list[30],int n) 
+void selection_sort (int list[],int n) 
 { 
-    int temp ; 
-    int i,j; 
+    int min,temp,i,j; 
     for(i=0;i<n;i++) 
-        for(j=0;j<n-1;j++) 
-            if(list[j]>list[j+1]) 
-            { 
-                temp=list[j]; 
-                list[j]=list[j+1]; 
-                list[j+1]=temp; 
-            }
+    { 
+        min=i; 
+        for(j=i+1;j<n;j++) 
+        { 
+            if(list[j]<list[min]) 
+            min=j; 
+        } 
+        temp=list[i]; 
+        list[i]=list[min]; 
+        list[min]=temp; 
+    } 
 }
