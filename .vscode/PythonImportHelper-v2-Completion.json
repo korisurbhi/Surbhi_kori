@@ -1,20 +1,28 @@
 [
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "tkinter",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "tkinter",
         "description": "tkinter",
         "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
@@ -186,6 +194,204 @@
         "description": "python.function.function",
         "peekOfCode": "result = add (5, 3)\nprint(\"Addtion is : \", result)\nprint(\"4. Function to check Even or Odd\")\n#function declaration\ndef check_even_odd(number):\n    if number % 2 ==0:\n        print(f\"The number {number} is Even.\")\n    else:\n        print(f\"The number {number} is Odd.\")\n#call the function",
         "detail": "python.function.function",
+        "documentation": {}
+    },
+    {
+        "label": "cal",
+        "kind": 2,
+        "importPath": "python.GUI.addition_using_tkinter",
+        "description": "python.GUI.addition_using_tkinter",
+        "peekOfCode": "def cal():\n    def addition():\n        num1 = entry_num1.get()\n        num2 = entry_num2.get()\n        add = float(num1) + float(num2)\n        output.config(text=f\"addition is{add}!\")\n    def subtraction():\n        num1 = entry_num1.get()\n        num2 = entry_num2.get()\n        sub = float(num1) - float(num2)",
+        "detail": "python.GUI.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "python.GUI.addition_using_tkinter",
+        "description": "python.GUI.addition_using_tkinter",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"simple widget example\")\nroot.geometry(\"300x200\")\nlabel_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)",
+        "detail": "python.GUI.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "label_num1",
+        "kind": 5,
+        "importPath": "python.GUI.addition_using_tkinter",
+        "description": "python.GUI.addition_using_tkinter",
+        "peekOfCode": "label_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef cal():\n    def addition():",
+        "detail": "python.GUI.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "label_num2",
+        "kind": 5,
+        "importPath": "python.GUI.addition_using_tkinter",
+        "description": "python.GUI.addition_using_tkinter",
+        "peekOfCode": "label_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef cal():\n    def addition():\n        num1 = entry_num1.get()\n        num2 = entry_num2.get()\n        add = float(num1) + float(num2)\n        output.config(text=f\"addition is{add}!\")",
+        "detail": "python.GUI.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "button_frame",
+        "kind": 5,
+        "importPath": "python.GUI.addition_using_tkinter",
+        "description": "python.GUI.addition_using_tkinter",
+        "peekOfCode": "button_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=cal)\nbutton2.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.GUI.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "button2",
+        "kind": 5,
+        "importPath": "python.GUI.addition_using_tkinter",
+        "description": "python.GUI.addition_using_tkinter",
+        "peekOfCode": "button2 = tk.Button(button_frame,text=\"sub\",command=cal)\nbutton2.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.GUI.addition_using_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "addition",
+        "kind": 2,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "def addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = int(num1) + int(num2)\n    output.config(text=f\"addition is {add}.\")\ndef subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = int(num1) - int(num2)\n    output.config(text=f\"subtraction is {sub}.\")",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "subtraction",
+        "kind": 2,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "def subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = int(num1) - int(num2)\n    output.config(text=f\"subtraction is {sub}.\")\ndef multiplication():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    mul = int(num1)* int(num2)\n    output.config(text=f\"Multiplication is {mul}.\")",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "multiplication",
+        "kind": 2,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "def multiplication():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    mul = int(num1)* int(num2)\n    output.config(text=f\"Multiplication is {mul}.\")\ndef division():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    div = int(num1) / int(num2)\n    output.config(text=f\"division is {div}.\")",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "division",
+        "kind": 2,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "def division():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    div = int(num1) / int(num2)\n    output.config(text=f\"division is {div}.\")\nbutton_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Calculator\")\nroot.geometry(\"300x200\")\nlabel_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "label_num1",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "label_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "label_num2",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "label_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = int(num1) + int(num2)\n    output.config(text=f\"addition is {add}.\")\ndef subtraction():",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button_frame",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "button_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button2",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "button2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button3",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "button3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "button3",
+        "kind": 5,
+        "importPath": "python.GUI.calculator",
+        "description": "python.GUI.calculator",
+        "peekOfCode": "button3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
+        "detail": "python.GUI.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "add_task",
+        "kind": 2,
+        "importPath": "python.GUI.to_do",
+        "description": "python.GUI.to_do",
+        "peekOfCode": "def add_task():\n    task = entry.get()\n    if task:\n        listbox.insert(END, task)\n        entry.delete(0, END)\ndef delete_task():\n    try:\n        index = listbox.curselection()[0]\n        listbox.delete(index)\n    except:",
+        "detail": "python.GUI.to_do",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task",
+        "kind": 2,
+        "importPath": "python.GUI.to_do",
+        "description": "python.GUI.to_do",
+        "peekOfCode": "def delete_task():\n    try:\n        index = listbox.curselection()[0]\n        listbox.delete(index)\n    except:\n        pass\nroot = Tk()\nroot.title(\"To-Do List App\")\nentry = Entry(root, width=30)\nentry.pack(pady=5)",
+        "detail": "python.GUI.to_do",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "python.GUI.to_do",
+        "description": "python.GUI.to_do",
+        "peekOfCode": "root = Tk()\nroot.title(\"To-Do List App\")\nentry = Entry(root, width=30)\nentry.pack(pady=5)\nButton(root, text=\"Add Task\", command=add_task).pack(pady=5)\nButton(root, text=\"Delete Task\", command=delete_task).pack(pady=5)\nlistbox = Listbox(root, width=40)\nlistbox.pack(padx=10, pady=10)\nroot.mainloop()",
+        "detail": "python.GUI.to_do",
+        "documentation": {}
+    },
+    {
+        "label": "entry",
+        "kind": 5,
+        "importPath": "python.GUI.to_do",
+        "description": "python.GUI.to_do",
+        "peekOfCode": "entry = Entry(root, width=30)\nentry.pack(pady=5)\nButton(root, text=\"Add Task\", command=add_task).pack(pady=5)\nButton(root, text=\"Delete Task\", command=delete_task).pack(pady=5)\nlistbox = Listbox(root, width=40)\nlistbox.pack(padx=10, pady=10)\nroot.mainloop()",
+        "detail": "python.GUI.to_do",
+        "documentation": {}
+    },
+    {
+        "label": "listbox",
+        "kind": 5,
+        "importPath": "python.GUI.to_do",
+        "description": "python.GUI.to_do",
+        "peekOfCode": "listbox = Listbox(root, width=40)\nlistbox.pack(padx=10, pady=10)\nroot.mainloop()",
+        "detail": "python.GUI.to_do",
         "documentation": {}
     },
     {
@@ -402,168 +608,6 @@
         "description": "python.practical_3rd_sem.5th",
         "peekOfCode": "def delete_student(student_id): \n    conn = create_connection() \n    cursor = conn.cursor() \n    cursor.execute(\"DELETE FROM students WHERE id=%s\", (student_id,)) \n    conn.commit() \n    conn.close() \n# ---------- MAIN PROGRAM ---------- \nif __name__ == \"__main__\": \n    create_table() \n    print(\"Inserting records...\") ",
         "detail": "python.practical_3rd_sem.5th",
-        "documentation": {}
-    },
-    {
-        "label": "addition",
-        "kind": 2,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "def addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = float(num1) + float(num2)\n    output.config(text=f\"addition is{add}!\")\ndef subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = float(num1) - float(num2)\n    output.config(text=f\"subtraction is{sub}!\")",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "subtraction",
-        "kind": 2,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "def subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = float(num1) - float(num2)\n    output.config(text=f\"subtraction is{sub}!\")\nbutton_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "root",
-        "kind": 5,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "root = tk.Tk()\nroot.title(\"simple widget example\")\nroot.geometry(\"300x200\")\nlabel_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "label_num1",
-        "kind": 5,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "label_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "label_num2",
-        "kind": 5,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "label_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = float(num1) + float(num2)\n    output.config(text=f\"addition is{add}!\")\ndef subtraction():",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "button_frame",
-        "kind": 5,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "button_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "button2",
-        "kind": 5,
-        "importPath": "python.tkinter.addition_using_tkinter",
-        "description": "python.tkinter.addition_using_tkinter",
-        "peekOfCode": "button2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
-        "detail": "python.tkinter.addition_using_tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "addition",
-        "kind": 2,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "def addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = int(num1) + int(num2)\n    output.config(text=f\"addition is {add}.\")\ndef subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = int(num1) - int(num2)\n    output.config(text=f\"subtraction is {sub}.\")",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "subtraction",
-        "kind": 2,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "def subtraction():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    sub = int(num1) - int(num2)\n    output.config(text=f\"subtraction is {sub}.\")\ndef multiplication():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    mul = int(num1)* int(num2)\n    output.config(text=f\"Multiplication is {mul}.\")",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "multiplication",
-        "kind": 2,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "def multiplication():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    mul = int(num1)* int(num2)\n    output.config(text=f\"Multiplication is {mul}.\")\ndef division():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    div = int(num1) / int(num2)\n    output.config(text=f\"division is {div}.\")",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "division",
-        "kind": 2,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "def division():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    div = int(num1) / int(num2)\n    output.config(text=f\"division is {div}.\")\nbutton_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "root",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "root = tk.Tk()\nroot.title(\"Calculator\")\nroot.geometry(\"300x200\")\nlabel_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "label_num1",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "label_num1 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num1.pack()\nentry_num1= tk.Entry(root, width=25)\nentry_num1.pack()\nlabel_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "label_num2",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "label_num2 = tk.Label(root, text=\"Enter number:\",font=(\"Arial\",12))\nlabel_num2.pack()\nentry_num2= tk.Entry(root, width=25)\nentry_num2.pack()\ndef addition():\n    num1 = entry_num1.get()\n    num2 = entry_num2.get()\n    add = int(num1) + int(num2)\n    output.config(text=f\"addition is {add}.\")\ndef subtraction():",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "button_frame",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "button_frame = tk.Frame(root)\nbutton_frame.pack(pady=10)\nbutton1= tk.Button(button_frame,text=\"add\",command=addition)\nbutton1.pack(side=tk.LEFT, padx=10)\nbutton2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "button2",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "button2 = tk.Button(button_frame,text=\"sub\",command=subtraction)\nbutton2.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "button3",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "button3 = tk.Button(button_frame,text=\"mul\",command=multiplication)\nbutton3.pack(side=tk.LEFT, padx=10)\nbutton3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
-        "detail": "python.tkinter.calculator",
-        "documentation": {}
-    },
-    {
-        "label": "button3",
-        "kind": 5,
-        "importPath": "python.tkinter.calculator",
-        "description": "python.tkinter.calculator",
-        "peekOfCode": "button3 = tk.Button(button_frame,text=\"div\",command=division)\nbutton3.pack(side=tk.LEFT, padx=10)\noutput=tk.Label(root,text=\"\")\noutput.pack()\nroot.mainloop()",
-        "detail": "python.tkinter.calculator",
         "documentation": {}
     },
     {
