@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>String Manipulation</title>
+<script>
+function show() {
+    var str = document.getElementById("txt").value;
+
+    document.getElementById("res").innerHTML =
+    "Length: " + str.length + "<br>" +
+    "Uppercase: " + str.toUpperCase() + "<br>" +
+    "Lowercase: " + str.toLowerCase();
+}
+</script>
+</head>
+
+<body>
+
+<h2>String Manipulation</h2>
+
+Enter String:
+<input type="text" id="txt"><br><br>
+
+<button onclick="show()">Show Result</button>
+
+<p id="res"></p>
+
+</body>
+</html>
