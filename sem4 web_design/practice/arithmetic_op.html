@@ -1,0 +1,25 @@
+<html> 
+<head> 
+<title>Arithmetic Operations</title> 
+<script> 
+function calculate() { 
+var a = parseInt(document.getElementById("num1").value); 
+var b = parseInt(document.getElementById("num2").value); 
+document.getElementById("res").innerHTML = 
+"Addition = " + (a + b) + "<br>" + 
+"Subtraction = " + (a - b) + "<br>" + 
+"Multiplication = " + (a * b) + "<br>" + 
+
+"Division = " + (a / b); } 
+</script> 
+</head> 
+<body> 
+<h2>Arithmetic Operations</h2> 
+Enter First Number: 
+<input type="text" id="num1"><br><br> 
+Enter Second Number: 
+<input type="text" id="num2"><br><br> 
+<button onclick="calculate()">Calculate</button> 
+<p id="res"></p> 
+</body> 
+</html> 
