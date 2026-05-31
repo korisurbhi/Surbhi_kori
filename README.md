@@ -1,6 +1,6 @@
 # 🎓 B.Tech IT Academic Repository
 
-Hi, I'm **Surbhi Kori**, a B.Tech Information Technology student.
+Hi, I'm **Surbhi Kori**, Currently pursuing B.Tech in Information Technology and maintaining this repository to organize academic practicals, programming exercises, and web development work.
 
 This repository contains my semester-wise practical programs, assignments, and academic work completed during my B.Tech journey.
 
